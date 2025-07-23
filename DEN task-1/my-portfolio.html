@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Waqar Ali | Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="my-portfolio.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Waqar Ali</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="themeToggle" />
+                            <label class="form-check-label" for="themeToggle">Dark Mode</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="container text-center">
+            <div class="profile-pic-wrapper">
+                <img src="./images/my-pic-1.jpg" alt="Waqar Ali" class="profile-pic">
+            </div>
+            <h1 class="display-4 mt-3">Hi, I'm Waqar Ali</h1>
+            <p class="lead typing" id="typing-text">I'm passionate Web Developer | Freelancer | Tech Enthusiast</p>
+        </div>
+    </section>
+
+
+
+    <section id="about-skills" class="section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- About Section -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2>About Me</h2>
+                    <h4>Who am I?</h4>
+                    <p>Hello! I'm Waqar Ali, a passionate web developer based in Pakistan. With over a year of
+                        experience in frontend development, I've worked with local clients to create modern, responsive
+                        websites that deliver exceptional user experience.</p>
+                    <p>I'm currently expanding my skillset to become a full stack developer. My journey includes
+                        mastering MySQL, React.js, Next.js, and Node.js to build complete web applications from front to
+                        back.</p>
+                    <p>As a dedicated learner, I'm constantly exploring new technologies and best practices to enhance
+                        my development capabilities and deliver cutting-edge solutions.</p>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="col-md-6">
+                    <h2>Skills</h2>
+                    <div class="mb-3">
+                        <label>HTML</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 95%;">Expert</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>CSS</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 85%;">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>JavaScript</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning text-dark" style="width: 75%;">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Bootstrap</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 80%;">Advanced</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">My Services</h2>
+            <div class="row g-4">
+                <!-- Frontend Development -->
+                <div class="col-md-4">
+                    <div class="service-box p-4 h-100 bg-white shadow rounded-4 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="Frontend" class="mb-3"
+                            width="80" height="80">
+                        <h5 class="fw-semibold">Frontend Development</h5>
+                        <p class="text-muted">Building responsive, interactive UIs using React.js, Bootstrap, and modern
+                            JavaScript frameworks.</p>
+                    </div>
+                </div>
+                <!-- Backend Development -->
+                <div class="col-md-4">
+                    <div class="service-box p-4 h-100 bg-white shadow rounded-4 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Backend" class="mb-3"
+                            width="80" height="80">
+                        <h5 class="fw-semibold">Backend Development</h5>
+                        <p class="text-muted">Creating secure RESTful APIs with Node.js, Express, MongoDB, and
+                            integration with frontend apps.</p>
+                    </div>
+                </div>
+                <!-- Full Stack Applications -->
+                <div class="col-md-4">
+                    <div class="service-box p-4 h-100 bg-white shadow rounded-4 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/906/906343.png" alt="Full Stack" class="mb-3"
+                            width="80" height="80">
+                        <h5 class="fw-semibold">Full Stack React Apps</h5>
+                        <p class="text-muted">End-to-end web apps with React frontend, Node.js backend, REST APIs, and
+                            integrated database solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Projects -->
+    <section id="projects" class="section text-center py-5">
+        <div class="container">
+            <h2 class="mb-5">Projects</h2>
+            <div class="row g-4">
+                <!-- E-Commerce Project -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img src="https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="E-Commerce Website" class="card-img-top rounded-top" height="200"
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Website</h5>
+                            <p class="card-text">Modern shopping site with product catalog, cart, checkout and payment
+                                integration.</p>
+                            <a href="#" class="btn btn-outline-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Restaurant Project -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="Restaurant Website" class="card-img-top rounded-top" height="200"
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant Website</h5>
+                            <p class="card-text">An elegant restaurant site with digital menu, reservation system, and
+                                photo gallery.</p>
+                            <a href="#" class="btn btn-outline-success">View</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Airport Ticket Booking Project -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img src="https://images.pexels.com/photos/7232404/pexels-photo-7232404.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="Airport Booking Website" class="card-img-top rounded-top" height="200"
+                            style="object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Airport Ticket Booking</h5>
+                            <p class="card-text">Search, compare and book flights worldwide with live availability and
+                                smooth UI.</p>
+                            <a href="#" class="btn btn-outline-danger">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-light text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Waqar Ali. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="my-portfolio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+/* my-portfolio.css */
+
+:root {
+    --bg: #fefefe;
+    --text: #1e1e1e;
+    --card-bg: #ffffff;
+    --card-text: #1e1e1e;
+    --input-bg: #ffffff;
+    --input-text: #1e1e1e;
+    --progress-bg: #dee2e6;
+    --progress-text: #000000;
+    --label-text: #333333;
+    --accent: #007bff;
+    --button-bg: #0056b3;
+    --button-text: #ffffff;
+    --switch-bg: #ccc;
+    --switch-thumb: #ffffff;
+    --toggler-icon: #000000;
+    --hero-bg-light: linear-gradient(to right, #007bff, #00f2fe);
+    --hero-text-light: #ffffff;
+    --hero-bg-dark: linear-gradient(to right, #003366, #1f1f1f);
+    --hero-text-dark: #ffffff;
+}
+
+body.dark-mode {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --card-bg: #1e1e1e;
+    --card-text: #ffffff;
+    --input-bg: #2c2c2c;
+    --input-text: #f0f0f0;
+    --progress-bg: #444;
+    --progress-text: #f0f0f0;
+    --label-text: #cccccc;
+    --accent: #66ccff;
+    --button-bg: #3388cc;
+    --button-text: #ffffff;
+    --switch-bg: #666;
+    --switch-thumb: #ffffff;
+    --toggler-icon: #ffffff;
+    --hero-bg-light: linear-gradient(to right, #007bff, #00f2fe);
+    --hero-text-light: #ffffff;
+    --hero-bg-dark: linear-gradient(to right, #003366, #1f1f1f);
+    --hero-text-dark: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+span,
+strong,
+.navbar-brand,
+.nav-link,
+.footer,
+.form-check-label {
+    color: var(--text) !important;
+}
+
+label,
+#skills label,
+#skills h2,
+#contact h2 {
+    color: var(--label-text) !important;
+}
+
+.navbar,
+.footer {
+    background-color: var(--bg) !important;
+    border-bottom: 1px solid var(--text);
+}
+
+.navbar-toggler {
+    border-color: var(--accent);
+}
+
+/* Custom Navbar Toggler Icon */
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background-image: none;
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--toggler-icon);
+    transition: 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: 4px;
+}
+
+.navbar-toggler-icon span {
+    top: 11px;
+}
+
+.navbar-toggler-icon::after {
+    top: 18px;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+    transform: rotate(0);
+}
+
+.card,
+.section,
+#skills,
+#contact {
+    background-color: var(--card-bg) !important;
+    color: var(--card-text) !important;
+}
+
+.form-control,
+textarea {
+    background-color: var(--input-bg) !important;
+    color: var(--input-text) !important;
+    border: 1px solid #ccc;
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+    color: var(--input-text);
+    opacity: 0.7;
+}
+
+.progress {
+    background-color: var(--progress-bg) !important;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+    color: var(--progress-text) !important;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--button-bg) !important;
+    color: var(--button-text) !important;
+    border: none;
+}
+
+.btn-primary:hover {
+    filter: brightness(0.9);
+}
+
+/* Toggle Switch Styling */
+.form-check-input {
+    background-color: var(--switch-bg) !important;
+    border-color: var(--switch-bg) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+/* Smooth transition */
+* {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hero Section Animation */
+#hero {
+    padding: 100px 0;
+    text-align: center;
+    background: var(--hero-bg-light);
+    color: var(--hero-text-light);
+}
+
+body.dark-mode #hero {
+    background: var(--hero-bg-dark);
+    color: var(--hero-text-dark);
+}
+
+#hero h1 {
+    animation: fadeInDown 1s ease-in-out;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.profile-pic-wrapper {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+#about-skills {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+body.dark-mode #about-skills {
+    background-color: #1b1b1b;
+}
+#about-skills h2,
+#about-skills h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+/* #services {
+    background-color: #f8f9fa;
+}
+body.dark-mode #services {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode .service-box {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+} */
+.service-box {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-box h5 {
+    color: var(--label-text);
+}
+
+.service-box p {
+    color: var(--label-text);
+}
+
+body.dark-mode .service-box {
+    background-color: var(--card-bg);
+    border: 1px solid #333;
+}
+
+body.dark-mode .service-box h5 {
+    color: #000 !important;
+}
+
+
+
+
+#typing-text {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: typing 6s steps(60, end), blink 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid currentColor;
+    width: 0;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    color: inherit;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: currentColor;
+    }
+}
